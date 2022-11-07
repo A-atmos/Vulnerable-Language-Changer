@@ -36,5 +36,6 @@
         <h2><?=$Language["header"] ?></h2>
     </div>
     
+    <!-- Created with <3 by 0x00ac -->
     </body>
 </html>
