@@ -7,12 +7,14 @@ RUN apt-get install cl-base64 -y
 COPY src/config/php.ini /usr/local/etc/php/php.ini
 RUN useradd -ms /bin/bash prithivi
 
-RUN mv /var/www/html/config/flag.txt /home/prithivi/
-RUN chown prithivi /home/prithivi/flag.txt
+RUN mv /var/www/html/config/finalFlag.txt /home/prithivi/
+RUN chown prithivi /home/prithivi/finalFlag.txt
 RUN chown prithivi /usr/bin/base64
 
+RUN mv /var/www/html/config/userFlag.txt / && rm -r /var/www/html/config
 USER prithivi
-RUN chmod 400 /home/prithivi/flag.txt
+RUN chmod 400 /home/prithivi/finalFlag.txt
+RUN chmod u+s /usr/bin/base64
 
 USER www-data
 EXPOSE 80
