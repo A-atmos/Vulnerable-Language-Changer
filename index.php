@@ -1,1 +1,0 @@
-<script type="text/javascript">location.href = 'rfi.php';</script>
