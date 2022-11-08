@@ -1,0 +1,21 @@
+version: "3.7"
+
+services:
+    nginx:
+        build: ./nginx/
+        container_name: nginx-container
+        ports:
+            - 80:80
+        links:
+            - php
+        volumes:
+            - ./src:/var/www/html/
+        
+    php:
+        build: ./
+        image: 0x00ac/vulnerable-language-changer
+        container_name: php-container
+        expose:
+            - 9000
+        volumes:
+            - ./src:/var/www/html/
