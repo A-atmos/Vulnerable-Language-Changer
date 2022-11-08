@@ -19,7 +19,8 @@
         <form method="get">
 		   <select name="lang">
 			  <option value="lang/english.php">English</option>
-			  <option value="lang/hindi.php">Hindi</option>
+			  <option value="lang/hindi.php">हिन्दी</option>
+			  <option value="lang/nepali.php">नेपाली</option>
 		   </select>
 		   <input type="submit" value="Change">
         </form>
