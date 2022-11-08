@@ -30,5 +30,12 @@ Privilege Escalation is done from the exploitation of SUID Binary of base64. The
 
 ## Docker
 
-Use `sudo docker build -t ${CONTAINER_NAME} .` to create the container.
-Then, use `sudo docker run -p 80:80 ${CONTAINER_NAME}` to run the application.
+Use`sudo docker pull 0x00ac/vulnerable-language-changer:innovision` to pull and `sudo docker run -p 80:80 0x00ac/vulnerable-language-changer:innovision` run the docker image from the docker-hub.
+> This uses apache web server.
+
+# OR
+
+Use the `docker-compose.yml` file to build and run the docker.
+> This uses nginx server.
+
+Then have a look at `localhost` to get the problem.
