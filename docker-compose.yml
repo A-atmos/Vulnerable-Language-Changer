@@ -13,9 +13,4 @@ services:
         
     php:
         build: ./
-        image: 0x00ac/vulnerable-language-changer
         container_name: php-container
-        expose:
-            - 9000
-        volumes:
-            - ./src:/var/www/html/

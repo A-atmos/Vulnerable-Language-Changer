@@ -1,5 +1,6 @@
-FROM php:7.0-fpm
+FROM php:7.0-apache
 COPY src/ /var/www/html
+
 RUN apt-get update -y && apt-get install python3 -y
 RUN apt-get install cl-base64 -y
 
@@ -16,3 +17,4 @@ RUN chmod 400 /home/prithivi/finalFlag.txt
 RUN chmod u+s /usr/bin/base64
 
 USER www-data
+EXPOSE 80
