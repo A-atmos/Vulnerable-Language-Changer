@@ -1,0 +1,10 @@
+# Nmap 7.92 scan initiated Wed Nov  9 12:18:48 2022 as: nmap -p- -T5 -oN nmap/allport.nmap localhost
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000045s latency).
+Other addresses for localhost (not scanned): ::1
+Not shown: 65533 closed tcp ports (conn-refused)
+PORT      STATE SERVICE
+80/tcp    open  http
+38203/tcp open  agpolicy
+
+# Nmap done at Wed Nov  9 12:18:49 2022 -- 1 IP address (1 host up) scanned in 0.71 seconds
