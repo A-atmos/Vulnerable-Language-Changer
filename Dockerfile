@@ -1,4 +1,4 @@
-FROM php:7.0-apache
+FROM php:7.0-fpm
 COPY src/ /var/www/html
 
 RUN apt-get update -y && apt-get install python3 -y
